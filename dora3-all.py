@@ -1,16 +1,35 @@
 import socket
 import time
+import re
+import language_tool_python  # Corrector gramatical
 from langdetect import detect
 
 # Configuración del bot
 server = "irc.libera.chat"
 channel = "#VoxAssist"
-botnick = "dorV3"
+botnick = "doraemon"
 adminname = "Zcom"
 exitcode = "bye " + botnick
 
 # Lista de bots conocidos para ignorar
-ignored_bots = ["Vox-es-bot", "Vox-ja-bot", "Vox-Assist-bot", "lead.libera.chat"]
+ignored_bots = [
+    "Vox-es-bot", "Vox-ja-bot", "Vox-Assist-bot", "lead.libera.chat",
+    "Vox-fr-bot", "Vox-ru-bot", "Vox-it-bot", "Vox-de-bot", "URLxy-bot"
+]
+
+# Cargar correctores gramaticales para los 7 idiomas soportados (excepto japonés)
+spell_checkers = {
+    "es": language_tool_python.LanguageToolPublicAPI("es"),
+    "en": language_tool_python.LanguageToolPublicAPI("en"),
+    "ru": language_tool_python.LanguageToolPublicAPI("ru"),
+    "de": language_tool_python.LanguageToolPublicAPI("de"),
+    "it": language_tool_python.LanguageToolPublicAPI("it"),
+    "fr": language_tool_python.LanguageToolPublicAPI("fr"),
+    "ja": None  # No corrector disponible para japonés, pero sigue en traducción
+}
+
+# Expresión regular para detectar URLs
+url_pattern = re.compile(r'https?://\S+')
 
 # Conectar al servidor IRC
 irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -53,6 +72,10 @@ while True:
         if sender in ignored_bots or botnick.lower() in msg.lower():
             continue
 
+        # Ignorar mensajes que contengan URLs
+        if url_pattern.search(msg):
+            continue
+
         # Modo desactivado: Si el mensaje empieza con '-' no traducir nada
         if msg.startswith("-"):
             continue
@@ -73,6 +96,10 @@ while True:
         # Si no hay texto válido, continuar
         if not text_to_translate:
             continue
+
+        # **Corrección ortográfica para los idiomas soportados (excepto japonés)**
+        if manual_lang in spell_checkers and spell_checkers[manual_lang]:
+            text_to_translate = spell_checkers[manual_lang].correct(text_to_translate)
 
         # Generar las traducciones adecuadas
         response_ja = response_en = response_es = response_ru = response_de = response_it = response_fr = ""
@@ -98,20 +125,6 @@ while True:
             response_de = "/translate ja de " + text_to_translate
             response_it = "(translate ja it " + text_to_translate
             response_fr = ")translate ja fr " + text_to_translate
-        elif manual_lang == "ru":
-            response_es = "%translate ru es " + text_to_translate
-            response_en = ".translate ru en " + text_to_translate
-            response_ja = "$translate ru ja " + text_to_translate
-            response_de = "/translate ru de " + text_to_translate
-            response_it = "(translate ru it " + text_to_translate
-            response_fr = ")translate ru fr " + text_to_translate
-        elif manual_lang == "de":
-            response_es = "%translate de es " + text_to_translate
-            response_en = ".translate de en " + text_to_translate
-            response_ja = "$translate de ja " + text_to_translate
-            response_ru = "&translate de ru " + text_to_translate
-            response_it = "(translate de it " + text_to_translate
-            response_fr = ")translate de fr " + text_to_translate
 
         # Enviar traducciones si hay un idioma válido detectado
         if response_ja:
