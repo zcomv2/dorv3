@@ -127,5 +127,13 @@ Manual Translation → Use !m<language_code> to specify the source language.
 
 Deactivated Mode → Use - at the beginning of a message to prevent translation.
 
-This documentation covers everything you need to use Doraemon Bot effectively in the chat. 🚀
+🆕 New Features Added 🚀🔥
+
+✅ Language correction added: Doraemon now automatically corrects spelling and grammar in Spanish, English, Russian, German, Italian, and French before translating.
+
+❌ Japanese (ja) is not corrected but is still translated.
+
+✅ Bot ignoring updated: Doraemon now ignores URLxy-bot, which posts URL titles, and will not read or translate any messages containing URLs (http:// or https://).
+
+Doraemon is now smarter and more efficient in translations! 🚀🔥
 
