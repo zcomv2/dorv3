@@ -19,6 +19,14 @@ Bot:
     (translate en it Hello everyone, how are you?
     )translate en fr Hello everyone, how are you?
 
+⚠ Important Notice for Doraemon Bot
+
+To ensure that Doraemon's translation system works correctly, you must have all the corresponding Limnoria (old Supybot) translation bots active in the same channel.
+
+Each translation bot must be configured with its corresponding prefix symbol to properly receive and respond to the translation messages sent by Doraemon.
+
+If any of these bots are missing or incorrectly set up, translations will fail or not be delivered correctly. ✅
+
 2️⃣ Manual Translation Mode
 
 How to use it
