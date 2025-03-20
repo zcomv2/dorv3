@@ -11,13 +11,21 @@ The translations will appear with the correct syntax used in the chat.
 Example:
 
 User: Hello everyone, how are you?
+
 Bot:
+
     $translate en ja Hello everyone, how are you?
+    
     %translate en es Hello everyone, how are you?
+    
     &translate en ru Hello everyone, how are you?
+    
     /translate en de Hello everyone, how are you?
+    
     (translate en it Hello everyone, how are you?
+    
     )translate en fr Hello everyone, how are you?
+    
 
 ⚠ Important Notice for Doraemon Bot
 
