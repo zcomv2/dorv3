@@ -35,6 +35,8 @@ Each translation bot must be configured with its corresponding prefix symbol to 
 
 If any of these bots are missing or incorrectly set up, translations will fail or not be delivered correctly. ✅
 
+The 6 Limnoria (old Supybot) bots must have the "Google" plugin loaded, as it contains the "translate" function. Also, remember to set the correct prefix symbol for each translation language.
+
 2️⃣ Manual Translation Mode
 
 How to use it
