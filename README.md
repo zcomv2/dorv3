@@ -153,7 +153,7 @@ Deactivated Mode → Use - at the beginning of a message to prevent translation.
 
 ✅ Bot ignoring updated: Doraemon now ignores URLxy-bot, which posts URL titles, and will not read or translate any messages containing URLs (http:// or https://).
 
-Undetected Language Handling
+✅Undetected Language Handling
 
 If language detection fails:
 
@@ -161,11 +161,13 @@ The original message is saved in cadenas.txt.
 
 A predefined warning (“Language not detected”) is sent in all translation formats.
 
-Command kadenas
+✅Command kadenas
 
 Users can type kadenas in the channel.
 
 Doraemon will reply with the last 1–6 lines from cadenas.txt (phrases where language detection failed).
+
+Thinking that Doraemon is ignored and the last 6 undetected phrases won't be seen; to fix this, unignore Doraemon and observe the behavior in developer mode.
 
 Doraemon is now smarter and more efficient in translations! 🚀🔥
 
