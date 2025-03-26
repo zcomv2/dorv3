@@ -169,6 +169,29 @@ Doraemon will reply with the last 1–6 lines from cadenas.txt (phrases where la
 
 Thinking that Doraemon is ignored and the last 6 undetected phrases won't be seen; to fix this, unignore Doraemon and observe the behavior in developer mode.
 
+### 🧩 Undetected Phrase Recognition via JSON Mapping
+
+When the bot cannot detect the language of a message:
+
+- It **cleans the phrase**, removing any known human nicknames (e.g. `Zcom`, `doraemon`, etc.).
+
+- It then checks the cleaned phrase against a predefined **`significados.json`** file.
+
+- If a **matching phrase** is found in the JSON:
+
+  - The associated **meaning** is used as the message to be translated instead of the original phrase.
+
+  - This meaning is then **broadcasted to all translation bots** using their appropriate prefix format.
+
+- If no match is found:
+
+  - The phrase is stored in `cadenas.txt` for future review or training.
+
+  - The bot sends a “language not detected” message in all supported translation prefixes.
+
+This feature allows Doraemon to **handle unknown or ambiguous expressions more intelligently**, improving translation clarity and allowing for community-based learning over time.
+
+
 Doraemon is now smarter and more efficient in translations! 🚀🔥
 
 [ Codename: #LingoHeroine ]
