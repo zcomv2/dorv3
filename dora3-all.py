@@ -4,6 +4,7 @@ import re
 import language_tool_python
 from langdetect import detect
 import os
+import json
 
 # Configuración del bot
 server = "irc.libera.chat"
@@ -18,6 +19,26 @@ ignored_bots = [
     "Vox-fr-bot", "Vox-ru-bot", "Vox-it-bot", "Vox-de-bot", "URLxy-bot"
 ]
 
+# Lista de nicks humanos para excluir al detectar significado
+nicks_humanos_excluir = [
+    "doraemon", "SwissalpS", "@amigojapan", "Zcom", "Vox-es-bot`", "Vox-ja-bot`",
+    "Vox-ru-bot`", "Vox-it-bot", "Vox-de-bot", "Vox-fr-bot`", "Vox-Assist-bot`",
+    "BridgeBot3", "onizu", "Dr-Kormanstein", "LunixAI", "@gwolf", "jcay",
+    "@ChanServ", "erry"
+]
+
+# Función para limpiar frase de posibles nicks humanos
+def limpiar_frase_de_nicks(frase):
+    palabras = frase.split()
+    return " ".join(p for p in palabras if p not in nicks_humanos_excluir).strip()
+
+# Cargar mapa de significados desde JSON
+try:
+    with open("significados.json", "r", encoding="utf-8") as jsonfile:
+        mapa_significados = json.load(jsonfile)
+except:
+    mapa_significados = {}
+
 # Cargar correctores gramaticales (excepto japonés)
 spell_checkers = {
     "es": language_tool_python.LanguageToolPublicAPI("es"),
@@ -27,6 +48,17 @@ spell_checkers = {
     "it": language_tool_python.LanguageToolPublicAPI("it"),
     "fr": language_tool_python.LanguageToolPublicAPI("fr"),
     "ja": None
+}
+
+# Prefijos para traducción
+prefix = {
+    "ja": "$translate",
+    "en": ".translate",
+    "es": "%translate",
+    "ru": "&translate",
+    "de": "/translate",
+    "it": "(translate",
+    "fr": ")translate"
 }
 
 # Regex
@@ -111,9 +143,16 @@ while True:
         supported_langs = ["es", "en", "ja", "ru", "de", "it", "fr"]
 
         if not idioma_detectado or manual_lang not in supported_langs:
+            frase_limpia = limpiar_frase_de_nicks(msg)
+            if frase_limpia in mapa_significados:
+                significado = mapa_significados[frase_limpia]
+                for lang in supported_langs:
+                    if lang != "es":
+                        send_irc_message(f"PRIVMSG {channel} :{prefix[lang]} es {lang} {significado}")
+                continue
             with open("cadenas.txt", "a") as f:
                 f.write(msg + "\n")
-            for code, prefix in {
+            not_found_prefix = {
                 "en": ".translate es en idioma no detectado",
                 "ja": "$translate en ja idioma no detectado",
                 "es": "%translate en es idioma no detectado",
@@ -121,8 +160,9 @@ while True:
                 "de": "/translate en de idioma no detectado",
                 "it": "(translate en it idioma no detectado",
                 "fr": ")translate en fr idioma no detectado"
-            }.items():
-                send_irc_message(f"PRIVMSG {channel} :{prefix}")
+            }
+            for code, line in not_found_prefix.items():
+                send_irc_message(f"PRIVMSG {channel} :{line}")
             continue
 
         if not text_to_translate:
@@ -130,16 +170,6 @@ while True:
 
         if manual_lang in spell_checkers and spell_checkers[manual_lang]:
             text_to_translate = spell_checkers[manual_lang].correct(text_to_translate)
-
-        prefix = {
-            "ja": "$translate",
-            "en": ".translate",
-            "es": "%translate",
-            "ru": "&translate",
-            "de": "/translate",
-            "it": "(translate",
-            "fr": ")translate"
-        }
 
         for lang in supported_langs:
             if lang != manual_lang:
@@ -150,3 +180,4 @@ while True:
         break
 
 irc.close()
+
