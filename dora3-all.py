@@ -6,18 +6,12 @@ from langdetect import detect
 import os
 import json
 
-# Configuración del bot
-server = "irc.libera.chat"
-channel = "#VoxAssist"
-botnick = "doraemon"
-adminname = "Zcom"
-exitcode = "bye " + botnick
-
-# Lista de bots conocidos para ignorar
-ignored_bots = [
-    "Vox-es-bot", "Vox-assist-bot", "lead.libera.chat",
-    "Vox-fr-bot", "Vox-ru-bot", "Vox-it-bot", "Vox-de-bot", "URLxy-bot"
-]
+# Cargar mapa de significados desde JSON trilingüe
+try:
+    with open("significados_trilingue.json", "r", encoding="utf-8") as jsonfile:
+        mapa_significados = json.load(jsonfile)
+except:
+    mapa_significados = {}
 
 # Lista de nicks humanos para excluir al detectar significado
 nicks_humanos_excluir = [
@@ -32,12 +26,18 @@ def limpiar_frase_de_nicks(frase):
     palabras = frase.split()
     return " ".join(p for p in palabras if p not in nicks_humanos_excluir).strip()
 
-# Cargar mapa de significados desde JSON
-try:
-    with open("significados.json", "r", encoding="utf-8") as jsonfile:
-        mapa_significados = json.load(jsonfile)
-except:
-    mapa_significados = {}
+# Configuración del bot
+server = "irc.libera.chat"
+channel = "#VoxAssist"
+botnick = "doraemon"
+adminname = "Zcom"
+exitcode = "bye " + botnick
+
+# Lista de bots conocidos para ignorar
+ignored_bots = [
+    "Vox-es-bot", "Vox-assist-bot", "lead.libera.chat",
+    "Vox-fr-bot", "Vox-ru-bot", "Vox-it-bot", "Vox-de-bot", "URLxy-bot", "Dr-Kormanstein"
+]
 
 # Cargar correctores gramaticales (excepto japonés)
 spell_checkers = {
@@ -48,17 +48,6 @@ spell_checkers = {
     "it": language_tool_python.LanguageToolPublicAPI("it"),
     "fr": language_tool_python.LanguageToolPublicAPI("fr"),
     "ja": None
-}
-
-# Prefijos para traducción
-prefix = {
-    "ja": "$translate",
-    "en": ".translate",
-    "es": "%translate",
-    "ru": "&translate",
-    "de": "/translate",
-    "it": "(translate",
-    "fr": ")translate"
 }
 
 # Regex
@@ -77,6 +66,16 @@ time.sleep(5)
 send_irc_message(f"JOIN {channel}")
 
 get_irc_message = lambda: irc.recv(2048).decode("UTF-8", errors='ignore')
+
+prefix = {
+    "ja": "$translate",
+    "en": ".translate",
+    "es": "%translate",
+    "ru": "&translate",
+    "de": "/translate",
+    "it": "(translate",
+    "fr": ")translate"
+}
 
 while True:
     message = get_irc_message().strip()
@@ -145,9 +144,10 @@ while True:
         if not idioma_detectado or manual_lang not in supported_langs:
             frase_limpia = limpiar_frase_de_nicks(msg)
             if frase_limpia in mapa_significados:
-                significado = mapa_significados[frase_limpia]
+                significado_obj = mapa_significados[frase_limpia]
                 for lang in supported_langs:
                     if lang != "es":
+                        significado = significado_obj.get(lang, frase_limpia)
                         send_irc_message(f"PRIVMSG {channel} :{prefix[lang]} es {lang} {significado}")
                 continue
             with open("cadenas.txt", "a") as f:
