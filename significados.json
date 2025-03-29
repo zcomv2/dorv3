@@ -1,49 +1,627 @@
 {
-  "ya veo": "meaning of: ya veo",
-  "test": "meaning of: test",
-  "bien :)": "meaning of: bien :)",
-  "a ver": "meaning of: a ver",
-  "yes": "meaning of: yes",
-  "hola Zcom!": "meaning of: hola Zcom!",
-  "ahora dice com envez de zoom": "meaning of: ahora dice com envez de zoom",
-  "jajaja": "meaning of: jajaja",
-  "si Zcom, yo ya lo pague": "meaning of: si Zcom, yo ya lo pague",
-  "bien": "meaning of: bien",
-  "?": "meaning of: ?",
-  "Zcom: ?": "meaning of: Zcom: ?",
-  "bien bien": "meaning of: bien bien",
-  "oh!, que kalamidad": "meaning of: oh!, que kalamidad",
-  "Ya llegó!": "meaning of: Ya llegó!",
-  "Zcom: se retraso como 10 minutos": "meaning of: Zcom: se retraso como 10 minutos",
-  "hi": "meaning of: hi",
-  "Hi eren": "meaning of: Hi eren",
-  "hi zcom y amigojapan": "meaning of: hi zcom y amigojapan",
-  "Zcom: IRC no es cifrado": "meaning of: Zcom: IRC no es cifrado",
-  "BridgeBot1:": "meaning of: BridgeBot1:",
-  "Ya veo": "meaning of: Ya veo",
-  "batata horneada": "meaning of: batata horneada",
-  "<Mob4382> hola": "meaning of: <Mob4382> hola",
-  "fantastico !": "meaning of: fantastico !",
-  "Think_Online: deberias llamarlo Boeing666": "meaning of: Think_Online: deberias llamarlo Boeing666",
-  "eren literal que si": "meaning of: eren literal que si",
-  "<Mob3760>": "meaning of: <Mob3760>",
-  "Think_Online: ya lo lei": "meaning of: Think_Online: ya lo lei",
-  "ya veo Think_Online": "meaning of: ya veo Think_Online",
-  "a mi?": "meaning of: a mi?",
-  "a mi no me hace falta nada": "meaning of: a mi no me hace falta nada",
-  "yep como va?": "meaning of: yep como va?",
-  "<Mob5558> hola saludos": "meaning of: <Mob5558> hola saludos",
-  "<korman-Z> muy bien Think, tu sigue adelante": "meaning of: <korman-Z> muy bien Think, tu sigue adelante",
-  "BridgeBot1: eres desdel android?": "meaning of: BridgeBot1: eres desdel android?",
-  "tremendo veo que lo conseguiste, vamooooooossssssssss!!!!!!!!!!!1": "meaning of: tremendo veo que lo conseguiste, vamooooooossssssssss!!!!!!!!!!!1",
-  "<poyuco> volvi otra vez": "meaning of: <poyuco> volvi otra vez",
-  "<Alan-Rs> hola otra vez": "meaning of: <Alan-Rs> hola otra vez",
-  "hola": "meaning of: hola",
-  "<kor> hola amigos": "meaning of: <kor> hola amigos",
-  "oh bien :)": "meaning of: oh bien :)",
-  ":)": "meaning of: :)",
-  "dan ayudas^": "meaning of: dan ayudas^",
-  "Zcom: poco a poco voy progresando": "meaning of: Zcom: poco a poco voy progresando",
-  "a bien": "meaning of: a bien",
-  "voy a mirarlo": "meaning of: voy a mirarlo"
+  "oh bien Zcom :)": {
+    "es": "significado de: oh bien Zcom :)",
+    "en": "meaning of: oh bien Zcom :)",
+    "ja": "意味: oh bien Zcom :)"
+  },
+  "jajaja siii Zcom": {
+    "es": "significado de: jajaja siii Zcom",
+    "en": "meaning of: jajaja siii Zcom",
+    "ja": "意味: jajaja siii Zcom"
+  },
+  "yo soy Korman": {
+    "es": "significado de: yo soy Korman",
+    "en": "meaning of: yo soy Korman",
+    "ja": "意味: yo soy Korman"
+  },
+  "Zcom: hola, ya comi": {
+    "es": "significado de: Zcom: hola, ya comi",
+    "en": "meaning of: Zcom: hola, ya comi",
+    "ja": "意味: Zcom: hola, ya comi"
+  },
+  "igualmente sumo": {
+    "es": "significado de: igualmente sumo",
+    "en": "meaning of: igualmente sumo",
+    "ja": "意味: igualmente sumo"
+  },
+  "nice!": {
+    "es": "significado de: nice!",
+    "en": "meaning of: nice!",
+    "ja": "意味: nice!"
+  },
+  "ya veo sumo , bienvenido paisano :)": {
+    "es": "significado de: ya veo sumo , bienvenido paisano :)",
+    "en": "meaning of: ya veo sumo , bienvenido paisano :)",
+    "ja": "意味: ya veo sumo , bienvenido paisano :)"
+  },
+  "Zcom:  no hay prisa": {
+    "es": "significado de: Zcom:  no hay prisa",
+    "en": "meaning of: Zcom:  no hay prisa",
+    "ja": "意味: Zcom:  no hay prisa"
+  },
+  "si": {
+    "es": "significado de: si",
+    "en": "meaning of: si",
+    "ja": "意味: si"
+  },
+  "hola Zcom": {
+    "es": "significado de: hola Zcom",
+    "en": "meaning of: hola Zcom",
+    "ja": "意味: hola Zcom"
+  },
+  "Zcom: no creo que sea tan extenso": {
+    "es": "significado de: Zcom: no creo que sea tan extenso",
+    "en": "meaning of: Zcom: no creo que sea tan extenso",
+    "ja": "意味: Zcom: no creo que sea tan extenso"
+  },
+  "Fantástico Zcom": {
+    "es": "significado de: Fantástico Zcom",
+    "en": "meaning of: Fantástico Zcom",
+    "ja": "意味: Fantástico Zcom"
+  },
+  ";)": {
+    "es": "significado de: ;)",
+    "en": "meaning of: ;)",
+    "ja": "意味: ;)"
+  },
+  "si? ah bien": {
+    "es": "significado de: si? ah bien",
+    "en": "meaning of: si? ah bien",
+    "ja": "意味: si? ah bien"
+  },
+  "ya veo Zcom": {
+    "es": "significado de: ya veo Zcom",
+    "en": "meaning of: ya veo Zcom",
+    "ja": "意味: ya veo Zcom"
+  },
+  "Zcom: me volvi a levantar": {
+    "es": "significado de: Zcom: me volvi a levantar",
+    "en": "meaning of: Zcom: me volvi a levantar",
+    "ja": "意味: Zcom: me volvi a levantar"
+  },
+  "Zcom: no creo qeu sea tan extenso": {
+    "es": "significado de: Zcom: no creo qeu sea tan extenso",
+    "en": "meaning of: Zcom: no creo qeu sea tan extenso",
+    "ja": "意味: Zcom: no creo qeu sea tan extenso"
+  },
+  "bien bien Zcom": {
+    "es": "significado de: bien bien Zcom",
+    "en": "meaning of: bien bien Zcom",
+    "ja": "意味: bien bien Zcom"
+  },
+  "fantastico Zcom !": {
+    "es": "significado de: fantastico Zcom !",
+    "en": "meaning of: fantastico Zcom !",
+    "ja": "意味: fantastico Zcom !"
+  },
+  "ola sumo": {
+    "es": "significado de: ola sumo",
+    "en": "meaning of: ola sumo",
+    "ja": "意味: ola sumo"
+  },
+  "a ver Zcom": {
+    "es": "significado de: a ver Zcom",
+    "en": "meaning of: a ver Zcom",
+    "ja": "意味: a ver Zcom"
+  },
+  "<Kor> Mira Think, ahora te voy a ensear una captura de pantalla de la App de android de VoxChat": {
+    "es": "significado de: <Kor> Mira Think, ahora te voy a ensear una captura de pantalla de la App de android de VoxChat",
+    "en": "meaning of: <Kor> Mira Think, ahora te voy a ensear una captura de pantalla de la App de android de VoxChat",
+    "ja": "意味: <Kor> Mira Think, ahora te voy a ensear una captura de pantalla de la App de android de VoxChat"
+  },
+  "bien Zcom": {
+    "es": "significado de: bien Zcom",
+    "en": "meaning of: bien Zcom",
+    "ja": "意味: bien Zcom"
+  },
+  "jejejje Zcom": {
+    "es": "significado de: jejejje Zcom",
+    "en": "meaning of: jejejje Zcom",
+    "ja": "意味: jejejje Zcom"
+  },
+  "Ya tengo hambre": {
+    "es": "significado de: Ya tengo hambre",
+    "en": "meaning of: Ya tengo hambre",
+    "ja": "意味: Ya tengo hambre"
+  },
+  "Very good": {
+    "es": "significado de: Very good",
+    "en": "meaning of: Very good",
+    "ja": "意味: Very good"
+  },
+  "trabajo": {
+    "es": "significado de: trabajo",
+    "en": "meaning of: trabajo",
+    "ja": "意味: trabajo"
+  },
+  "ok": {
+    "es": "significado de: ok",
+    "en": "meaning of: ok",
+    "ja": "意味: ok"
+  },
+  "ahora veo": {
+    "es": "significado de: ahora veo",
+    "en": "meaning of: ahora veo",
+    "ja": "意味: ahora veo"
+  },
+  "BridgeBot1:  eres Zcom desdel android?": {
+    "es": "significado de: BridgeBot1:  eres Zcom desdel android?",
+    "en": "meaning of: BridgeBot1:  eres Zcom desdel android?",
+    "ja": "意味: BridgeBot1:  eres Zcom desdel android?"
+  },
+  "funny world": {
+    "es": "significado de: funny world",
+    "en": "meaning of: funny world",
+    "ja": "意味: funny world"
+  },
+  "fantatsico Zcom !": {
+    "es": "significado de: fantatsico Zcom !",
+    "en": "meaning of: fantatsico Zcom !",
+    "ja": "意味: fantatsico Zcom !"
+  },
+  "eren: numb": {
+    "es": "significado de: eren: numb",
+    "en": "meaning of: eren: numb",
+    "ja": "意味: eren: numb"
+  },
+  "Si :)": {
+    "es": "significado de: Si :)",
+    "en": "meaning of: Si :)",
+    "ja": "意味: Si :)"
+  },
+  "genial Zcom !": {
+    "es": "significado de: genial Zcom !",
+    "en": "meaning of: genial Zcom !",
+    "ja": "意味: genial Zcom !"
+  },
+  "<Kor> hola que tal": {
+    "es": "significado de: <Kor> hola que tal",
+    "en": "meaning of: <Kor> hola que tal",
+    "ja": "意味: <Kor> hola que tal"
+  },
+  "sip": {
+    "es": "significado de: sip",
+    "en": "meaning of: sip",
+    "ja": "意味: sip"
+  },
+  "genial Zcom": {
+    "es": "significado de: genial Zcom",
+    "en": "meaning of: genial Zcom",
+    "ja": "意味: genial Zcom"
+  },
+  "a que si!": {
+    "es": "significado de: a que si!",
+    "en": "meaning of: a que si!",
+    "ja": "意味: a que si!"
+  },
+  "Hola zcom, como estas?": {
+    "es": "significado de: Hola zcom, como estas?",
+    "en": "meaning of: Hola zcom, como estas?",
+    "ja": "意味: Hola zcom, como estas?"
+  },
+  "hola eren": {
+    "es": "significado de: hola eren",
+    "en": "meaning of: hola eren",
+    "ja": "意味: hola eren"
+  },
+  "bueno nos vemos mas tarde Zcom": {
+    "es": "significado de: bueno nos vemos mas tarde Zcom",
+    "en": "meaning of: bueno nos vemos mas tarde Zcom",
+    "ja": "意味: bueno nos vemos mas tarde Zcom"
+  },
+  "日本語": {
+    "es": "significado de: 日本語",
+    "en": "meaning of: 日本語",
+    "ja": "意味: 日本語"
+  },
+  "jajaja, hambre si tenia": {
+    "es": "significado de: jajaja, hambre si tenia",
+    "en": "meaning of: jajaja, hambre si tenia",
+    "ja": "意味: jajaja, hambre si tenia"
+  },
+  "a bien bien :)": {
+    "es": "significado de: a bien bien :)",
+    "en": "meaning of: a bien bien :)",
+    "ja": "意味: a bien bien :)"
+  },
+  "oh": {
+    "es": "significado de: oh",
+    "en": "meaning of: oh",
+    "ja": "意味: oh"
+  },
+  "a ver...": {
+    "es": "significado de: a ver...",
+    "en": "meaning of: a ver...",
+    "ja": "意味: a ver..."
+  },
+  "a bien bien": {
+    "es": "significado de: a bien bien",
+    "en": "meaning of: a bien bien",
+    "ja": "意味: a bien bien"
+  },
+  "hola Zcom m andas poor alli?": {
+    "es": "significado de: hola Zcom m andas poor alli?",
+    "en": "meaning of: hola Zcom m andas poor alli?",
+    "ja": "意味: hola Zcom m andas poor alli?"
+  },
+  "=hola": {
+    "es": "significado de: =hola",
+    "en": "meaning of: =hola",
+    "ja": "意味: =hola"
+  },
+  "si Zcom . acabo de llagar a casa": {
+    "es": "significado de: si Zcom . acabo de llagar a casa",
+    "en": "meaning of: si Zcom . acabo de llagar a casa",
+    "ja": "意味: si Zcom . acabo de llagar a casa"
+  },
+  "esta guapisima": {
+    "es": "significado de: esta guapisima",
+    "en": "meaning of: esta guapisima",
+    "ja": "意味: esta guapisima"
+  },
+  "I see": {
+    "es": "significado de: I see",
+    "en": "meaning of: I see",
+    "ja": "意味: I see"
+  },
+  "listo": {
+    "es": "significado de: listo",
+    "en": "meaning of: listo",
+    "ja": "意味: listo"
+  },
+  "nice": {
+    "es": "significado de: nice",
+    "en": "meaning of: nice",
+    "ja": "意味: nice"
+  },
+  "Zcom: por fin arregle el bug!": {
+    "es": "significado de: Zcom: por fin arregle el bug!",
+    "en": "meaning of: Zcom: por fin arregle el bug!",
+    "ja": "意味: Zcom: por fin arregle el bug!"
+  },
+  "A ver Zcom": {
+    "es": "significado de: A ver Zcom",
+    "en": "meaning of: A ver Zcom",
+    "ja": "意味: A ver Zcom"
+  },
+  "yep Zcom como va?": {
+    "es": "significado de: yep Zcom como va?",
+    "en": "meaning of: yep Zcom como va?",
+    "ja": "意味: yep Zcom como va?"
+  },
+  "Prueba": {
+    "es": "significado de: Prueba",
+    "en": "meaning of: Prueba",
+    "ja": "意味: Prueba"
+  },
+  "buenos dias sumo": {
+    "es": "significado de: buenos dias sumo",
+    "en": "meaning of: buenos dias sumo",
+    "ja": "意味: buenos dias sumo"
+  },
+  "seria igual": {
+    "es": "significado de: seria igual",
+    "en": "meaning of: seria igual",
+    "ja": "意味: seria igual"
+  },
+  "good good": {
+    "es": "significado de: good good",
+    "en": "meaning of: good good",
+    "ja": "意味: good good"
+  },
+  "no": {
+    "es": "significado de: no",
+    "en": "meaning of: no",
+    "ja": "意味: no"
+  },
+  "a ver.....": {
+    "es": "significado de: a ver.....",
+    "en": "meaning of: a ver.....",
+    "ja": "意味: a ver....."
+  },
+  "!dimeia que modelo de IA eres deepseek o openhermes?": {
+    "es": "significado de: !dimeia que modelo de IA eres deepseek o openhermes?",
+    "en": "meaning of: !dimeia que modelo de IA eres deepseek o openhermes?",
+    "ja": "意味: !dimeia que modelo de IA eres deepseek o openhermes?"
+  },
+  "saludos": {
+    "es": "significado de: saludos",
+    "en": "meaning of: saludos",
+    "ja": "意味: saludos"
+  },
+  "Zcom:  ?": {
+    "es": "significado de: Zcom:  ?",
+    "en": "meaning of: Zcom:  ?",
+    "ja": "意味: Zcom:  ?"
+  },
+  "asi es": {
+    "es": "significado de: asi es",
+    "en": "meaning of: asi es",
+    "ja": "意味: asi es"
+  },
+  "!": {
+    "es": "significado de: !",
+    "en": "meaning of: !",
+    "ja": "意味: !"
+  },
+  "Jajaja": {
+    "es": "significado de: Jajaja",
+    "en": "meaning of: Jajaja",
+    "ja": "意味: Jajaja"
+  },
+  "Tengo habré": {
+    "es": "significado de: Tengo habré",
+    "en": "meaning of: Tengo habré",
+    "ja": "意味: Tengo habré"
+  },
+  "Think_Online: pude arreglar el bug": {
+    "es": "significado de: Think_Online: pude arreglar el bug",
+    "en": "meaning of: Think_Online: pude arreglar el bug",
+    "ja": "意味: Think_Online: pude arreglar el bug"
+  },
+  "80m2": {
+    "es": "significado de: 80m2",
+    "en": "meaning of: 80m2",
+    "ja": "意味: 80m2"
+  },
+  "arigato": {
+    "es": "significado de: arigato",
+    "en": "meaning of: arigato",
+    "ja": "意味: arigato"
+  },
+  "ah": {
+    "es": "significado de: ah",
+    "en": "meaning of: ah",
+    "ja": "意味: ah"
+  },
+  "asi es Zcom": {
+    "es": "significado de: asi es Zcom",
+    "en": "meaning of: asi es Zcom",
+    "ja": "意味: asi es Zcom"
+  },
+  "bueno dew Zcom hasta mañana": {
+    "es": "significado de: bueno dew Zcom hasta mañana",
+    "en": "meaning of: bueno dew Zcom hasta mañana",
+    "ja": "意味: bueno dew Zcom hasta mañana"
+  },
+  "<ZcomV3> hola": {
+    "es": "significado de: <ZcomV3> hola",
+    "en": "meaning of: <ZcomV3> hola",
+    "ja": "意味: <ZcomV3> hola"
+  },
+  "ya veo": {
+    "es": "significado de: ya veo",
+    "en": "meaning of: ya veo",
+    "ja": "意味: ya veo"
+  },
+  "test": {
+    "es": "significado de: test",
+    "en": "meaning of: test",
+    "ja": "意味: test"
+  },
+  "bien :)": {
+    "es": "significado de: bien :)",
+    "en": "meaning of: bien :)",
+    "ja": "意味: bien :)"
+  },
+  "a ver": {
+    "es": "significado de: a ver",
+    "en": "meaning of: a ver",
+    "ja": "意味: a ver"
+  },
+  "yes": {
+    "es": "significado de: yes",
+    "en": "meaning of: yes",
+    "ja": "意味: yes"
+  },
+  "hola Zcom!": {
+    "es": "significado de: hola Zcom!",
+    "en": "meaning of: hola Zcom!",
+    "ja": "意味: hola Zcom!"
+  },
+  "ahora dice com envez de zoom": {
+    "es": "significado de: ahora dice com envez de zoom",
+    "en": "meaning of: ahora dice com envez de zoom",
+    "ja": "意味: ahora dice com envez de zoom"
+  },
+  "jajaja": {
+    "es": "significado de: jajaja",
+    "en": "meaning of: jajaja",
+    "ja": "意味: jajaja"
+  },
+  "si Zcom, yo ya lo pague": {
+    "es": "significado de: si Zcom, yo ya lo pague",
+    "en": "meaning of: si Zcom, yo ya lo pague",
+    "ja": "意味: si Zcom, yo ya lo pague"
+  },
+  "bien": {
+    "es": "significado de: bien",
+    "en": "meaning of: bien",
+    "ja": "意味: bien"
+  },
+  "?": {
+    "es": "significado de: ?",
+    "en": "meaning of: ?",
+    "ja": "意味: ?"
+  },
+  "Zcom: ?": {
+    "es": "significado de: Zcom: ?",
+    "en": "meaning of: Zcom: ?",
+    "ja": "意味: Zcom: ?"
+  },
+  "bien bien": {
+    "es": "significado de: bien bien",
+    "en": "meaning of: bien bien",
+    "ja": "意味: bien bien"
+  },
+  "oh!, que kalamidad": {
+    "es": "significado de: oh!, que kalamidad",
+    "en": "meaning of: oh!, que kalamidad",
+    "ja": "意味: oh!, que kalamidad"
+  },
+  "Ya llegó!": {
+    "es": "significado de: Ya llegó!",
+    "en": "meaning of: Ya llegó!",
+    "ja": "意味: Ya llegó!"
+  },
+  "Zcom: se retraso como 10 minutos": {
+    "es": "significado de: Zcom: se retraso como 10 minutos",
+    "en": "meaning of: Zcom: se retraso como 10 minutos",
+    "ja": "意味: Zcom: se retraso como 10 minutos"
+  },
+  "hi": {
+    "es": "significado de: hi",
+    "en": "meaning of: hi",
+    "ja": "意味: hi"
+  },
+  "Hi eren": {
+    "es": "significado de: Hi eren",
+    "en": "meaning of: Hi eren",
+    "ja": "意味: Hi eren"
+  },
+  "hi zcom y amigojapan": {
+    "es": "significado de: hi zcom y amigojapan",
+    "en": "meaning of: hi zcom y amigojapan",
+    "ja": "意味: hi zcom y amigojapan"
+  },
+  "Zcom: IRC no es cifrado": {
+    "es": "significado de: Zcom: IRC no es cifrado",
+    "en": "meaning of: Zcom: IRC no es cifrado",
+    "ja": "意味: Zcom: IRC no es cifrado"
+  },
+  "BridgeBot1:": {
+    "es": "significado de: BridgeBot1:",
+    "en": "meaning of: BridgeBot1:",
+    "ja": "意味: BridgeBot1:"
+  },
+  "Ya veo": {
+    "es": "significado de: Ya veo",
+    "en": "meaning of: Ya veo",
+    "ja": "意味: Ya veo"
+  },
+  "batata horneada": {
+    "es": "significado de: batata horneada",
+    "en": "meaning of: batata horneada",
+    "ja": "意味: batata horneada"
+  },
+  "<Mob4382> hola": {
+    "es": "significado de: <Mob4382> hola",
+    "en": "meaning of: <Mob4382> hola",
+    "ja": "意味: <Mob4382> hola"
+  },
+  "fantastico !": {
+    "es": "significado de: fantastico !",
+    "en": "meaning of: fantastico !",
+    "ja": "意味: fantastico !"
+  },
+  "Think_Online: deberias llamarlo Boeing666": {
+    "es": "significado de: Think_Online: deberias llamarlo Boeing666",
+    "en": "meaning of: Think_Online: deberias llamarlo Boeing666",
+    "ja": "意味: Think_Online: deberias llamarlo Boeing666"
+  },
+  "eren literal que si": {
+    "es": "significado de: eren literal que si",
+    "en": "meaning of: eren literal que si",
+    "ja": "意味: eren literal que si"
+  },
+  "<Mob3760>": {
+    "es": "significado de: <Mob3760>",
+    "en": "meaning of: <Mob3760>",
+    "ja": "意味: <Mob3760>"
+  },
+  "Think_Online: ya lo lei": {
+    "es": "significado de: Think_Online: ya lo lei",
+    "en": "meaning of: Think_Online: ya lo lei",
+    "ja": "意味: Think_Online: ya lo lei"
+  },
+  "ya veo Think_Online": {
+    "es": "significado de: ya veo Think_Online",
+    "en": "meaning of: ya veo Think_Online",
+    "ja": "意味: ya veo Think_Online"
+  },
+  "a mi?": {
+    "es": "significado de: a mi?",
+    "en": "meaning of: a mi?",
+    "ja": "意味: a mi?"
+  },
+  "a mi no me hace falta nada": {
+    "es": "significado de: a mi no me hace falta nada",
+    "en": "meaning of: a mi no me hace falta nada",
+    "ja": "意味: a mi no me hace falta nada"
+  },
+  "yep como va?": {
+    "es": "significado de: yep como va?",
+    "en": "meaning of: yep como va?",
+    "ja": "意味: yep como va?"
+  },
+  "<Mob5558> hola saludos": {
+    "es": "significado de: <Mob5558> hola saludos",
+    "en": "meaning of: <Mob5558> hola saludos",
+    "ja": "意味: <Mob5558> hola saludos"
+  },
+  "<korman-Z> muy bien Think, tu sigue adelante": {
+    "es": "significado de: <korman-Z> muy bien Think, tu sigue adelante",
+    "en": "meaning of: <korman-Z> muy bien Think, tu sigue adelante",
+    "ja": "意味: <korman-Z> muy bien Think, tu sigue adelante"
+  },
+  "BridgeBot1: eres desdel android?": {
+    "es": "significado de: BridgeBot1: eres desdel android?",
+    "en": "meaning of: BridgeBot1: eres desdel android?",
+    "ja": "意味: BridgeBot1: eres desdel android?"
+  },
+  "tremendo veo que lo conseguiste, vamooooooossssssssss!!!!!!!!!!!1": {
+    "es": "significado de: tremendo veo que lo conseguiste, vamooooooossssssssss!!!!!!!!!!!1",
+    "en": "meaning of: tremendo veo que lo conseguiste, vamooooooossssssssss!!!!!!!!!!!1",
+    "ja": "意味: tremendo veo que lo conseguiste, vamooooooossssssssss!!!!!!!!!!!1"
+  },
+  "<poyuco> volvi otra vez": {
+    "es": "significado de: <poyuco> volvi otra vez",
+    "en": "meaning of: <poyuco> volvi otra vez",
+    "ja": "意味: <poyuco> volvi otra vez"
+  },
+  "<Alan-Rs> hola otra vez": {
+    "es": "significado de: <Alan-Rs> hola otra vez",
+    "en": "meaning of: <Alan-Rs> hola otra vez",
+    "ja": "意味: <Alan-Rs> hola otra vez"
+  },
+  "hola": {
+    "es": "significado de: hola",
+    "en": "meaning of: hola",
+    "ja": "意味: hola"
+  },
+  "<kor> hola amigos": {
+    "es": "significado de: <kor> hola amigos",
+    "en": "meaning of: <kor> hola amigos",
+    "ja": "意味: <kor> hola amigos"
+  },
+  "oh bien :)": {
+    "es": "significado de: oh bien :)",
+    "en": "meaning of: oh bien :)",
+    "ja": "意味: oh bien :)"
+  },
+  ":)": {
+    "es": "significado de: :)",
+    "en": "meaning of: :)",
+    "ja": "意味: :)"
+  },
+  "dan ayudas^": {
+    "es": "significado de: dan ayudas^",
+    "en": "meaning of: dan ayudas^",
+    "ja": "意味: dan ayudas^"
+  },
+  "Zcom: poco a poco voy progresando": {
+    "es": "significado de: Zcom: poco a poco voy progresando",
+    "en": "meaning of: Zcom: poco a poco voy progresando",
+    "ja": "意味: Zcom: poco a poco voy progresando"
+  },
+  "a bien": {
+    "es": "significado de: a bien",
+    "en": "meaning of: a bien",
+    "ja": "意味: a bien"
+  },
+  "voy a mirarlo": {
+    "es": "significado de: voy a mirarlo",
+    "en": "meaning of: voy a mirarlo",
+    "ja": "意味: voy a mirarlo"
+  }
 }
