@@ -8,7 +8,7 @@ import json
 
 # Cargar mapa de significados desde JSON trilingüe
 try:
-    with open("significados_trilingue.json", "r", encoding="utf-8") as jsonfile:
+    with open("significados.json", "r", encoding="utf-8") as jsonfile:
         mapa_significados = json.load(jsonfile)
 except:
     mapa_significados = {}
